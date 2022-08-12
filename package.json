@@ -1,0 +1,26 @@
+{
+  "name": "nasaapi",
+  "version": "1.0.0",
+  "description": "Ejercicio Backend Node, con Mongo DB NASAAPI - Nacho López",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nachoooooooo/NasaAPI.git"
+  },
+  "keywords": [
+    "NASAAPI"
+  ],
+  "author": "Nacho López",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nachoooooooo/NasaAPI/issues"
+  },
+  "homepage": "https://github.com/Nachoooooooo/NasaAPI#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  }
+}
