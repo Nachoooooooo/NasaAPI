@@ -85,7 +85,8 @@
     "whatwg-url": "^11.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -96,5 +97,8 @@
   "bugs": {
     "url": "https://github.com/Nachoooooooo/NasaAPI/issues"
   },
-  "homepage": "https://github.com/Nachoooooooo/NasaAPI#readme"
+  "homepage": "https://github.com/Nachoooooooo/NasaAPI#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
