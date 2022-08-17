@@ -4,4 +4,8 @@ const neaController = require ("../controllers/NeaApiController")
 
 router.post("/create", neaController.createNea);
 router.put("/edit", neaController.updateNea);
-router.delete("/delete", neaController.deleteNea);
+router.delete("/delete/:designation", neaController.deleteNea);
+router.get("/",neaController.getDesignacionPeriodoAnualPorClaseOrbital, neaController.getDesignacionFechaPeriodoAnualPorFecha);
+
+
+module.exports = router;
