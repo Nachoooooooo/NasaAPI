@@ -136,3 +136,48 @@ POST Para crear un nuevo usuario en el sistema. El objeto a crear tendrá los mi
       ObjectId("47ea90a3cb0eae19fe5c1f95"),
       ObjectId("33ea90a3cb0eae19fe5c1f95")]
 }
+Ejemplo: /users/create
+PUT Para editar un usuario en el sistema. Búsqueda para editar por email. El objeto a editar tendrá los mismos campos como los documentos proporcionandos en MongoDB como ejemplo.
+  {
+  "name": "Albertu Henriques 2",
+  "nickname": "Malaga",
+  "email": "albertu.enriques@thebridgeschool.es",
+  "picture": "albertu.jpg",
+  "affiliatedNumber": "3",
+  "affiliationDate": "2020-02-04T00:00:00.000",
+  "occupation": "TA FS FT",
+  "birthdate": "1992-02-04",
+      "neas_discovered": [
+      ObjectId("82ea90a3cb0eae19fe5c1f95"),
+      ObjectId("13ea90a3cb0eae19fe5c1f95"),
+      ObjectId("24ea90a3cb0eae19fe5c1f95")]
+}
+Ejemplo: /users/create
+PUT Para editar un usuario en el sistema. Búsqueda para editar por email. El objeto a editar tendrá los mismos campos como los documentos proporcionandos en MongoDB como ejemplo.
+DELETE Para borrar un usuario del sistema. Búsqueda para borrar por email.
+Ejemplo: /users/delete
+Importación de datos en MongoDB
+Datos ejercicio
+OPCIÓN 1 (la fácil):
+
+En MongoCompass, creamos una colección. En dicha colección aparece el botón add data. Al pulsar en el botón aparecerá la opción de Import File. Pulsada esta opción nos aparecerá un cuadro de texto que nos permite seleccionar el archivo JSON que queremos importar en nuestra colección.
+
+El ejercicio consta de dos colecciones que tenemos que importar.
+
+Los JSON de datos que queremos guardar te los adjuntamos en este ejercicio, en la carpeta utils.
+
+OPCIÓN 2:
+
+El seeding nos permite importar grandes cantidades de datos a colecciones vacías. En este caso de adjuntamos la carpeta utils con dos JSON, uno referente a landings y otro referente a la colección neas. Para poder guardarlos dentro de nuestra base de datos de mongo, usaremos mongoimport.
+
+mongoimport
+Comprobar si tenemos instalado mongoimport
+mongoimport --version
+Instalación de mongoimport (MongoDB Database Tools)
+Uso
+El comando neccesita que especifiquemos la base de datos, la colección, y la ruta al archivo (csv y json)
+
+mongoimport --db=[base-de-datos] --collection=[colección] [ruta/al/archivo]
+Si usamos un json que se compone de un array de objetos deberemos pasar también un flag que lo especifique
+
+mongoimport --jsonArray --db=[base-de-datos] --collection=[colección] [ruta/al/archivo]
