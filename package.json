@@ -1,6 +1,7 @@
 {
   "name": "nasaapi",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "API NASA",
   "main": "app.js",
   "dependencies": {
@@ -88,18 +89,36 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "dev": "nodemon --exec npm start"
+=======
+  "description": "Ejercicio Backend Node, con Mongo DB NASAAPI - Nacho López",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> main
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nachoooooooo/NasaAPI.git"
   },
+<<<<<<< HEAD
+=======
+  "keywords": [
+    "NASAAPI"
+  ],
+>>>>>>> main
   "author": "Nacho López",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Nachoooooooo/NasaAPI/issues"
   },
   "homepage": "https://github.com/Nachoooooooo/NasaAPI#readme",
+<<<<<<< HEAD
   "devDependencies": {
     "nodemon": "^2.0.19"
+=======
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+>>>>>>> main
   }
 }
