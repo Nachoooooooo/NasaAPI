@@ -95,7 +95,7 @@ const getNombreMasaFechaPorFecha = async (req, res, next) => {
     else if (to)
         filter = EXP_DATE.to;
     try {
-        const result = await Landing.find(filter, "name mass year -_id")
+        const result = await Landing.find(filter, "name mass year nametype geolocation -_id")
         return res.status(200).json(result)
     } catch (error) {
         console.log(error);
