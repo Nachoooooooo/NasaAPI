@@ -7,7 +7,7 @@ router.get("/mass/:mass",landingController.getNombreMasaPorMasaIgual);
 router.get("/class/:recclass", landingController.getNombreClasePorClase);
 router.post("/create",landingController.createLanding);
 router.put("/edit",landingController.updateLanding);
-router.delete("/remove/:id",landingController.deleteLanding);
+router.delete("/delete/:id",landingController.deleteLanding);
 
 
 module.exports = router;
